@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l0-s@h#x-)@bms8!+^$z+7*1vavu9^cp65)el9y^*br3t_p#tr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 AUTH_USER_MODEL = 'hrm.CustomUser'
 ROOT_URLCONF = 'hr_management_system.urls'
 LOGIN_REDIRECT_URL = 'dashboard'
