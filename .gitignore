@@ -1,0 +1,7 @@
+db.sqlite3
+hr_management_system/__pycache__/
+hrm/__pycache__/
+hrm/migrations/0*
+hrm/migrations/__pycache__/
+hrm/management/__pycache__/__init__.cpython-39.pyc
+hrm/management/commands/__pycache__/

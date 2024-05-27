@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}{{ company.name }}{% endblock %}
+{% block content %}
+<div class="card mt-5">
+    <div class="card-body">
+        <h2 class="card-title">{{ company.name }}</h2>
+
+        <h3 class="mt-4">Branches</h3>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for branch in branches %}
+                    <tr>
+                        <th scope="row">{{ forloop.counter }}</th>
+                        <td>{{ branch.name }}</td>
+                        <td>{{ branch.address }}</td>
+                        <td>
+                            <a href="{% url 'branch_detail' branch.id %}" class="btn btn-sm btn-primary">View</a>
+                            <a href="{% url 'delete_branch' branch.id %}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this branch?');">Delete</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h3 class="mt-4">Create Branch</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ branch_form.as_p }}
+            <button type="submit" name="create_branch" class="btn btn-primary mt-2">Create Branch</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

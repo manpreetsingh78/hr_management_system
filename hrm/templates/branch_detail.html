@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}{{ branch.name }}{% endblock %}
+{% block content %}
+<div class="card mt-5">
+    <div class="card-body">
+        <h2 class="card-title">{{ branch.name }}</h2>
+
+        <h3 class="mt-4">Employees</h3>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for employee in employees %}
+                    <tr>
+                        <th scope="row">{{ forloop.counter }}</th>
+                        <td>{{ employee.user.username }}</td>
+                        <td>{{ employee.position }}</td>
+                        <td>{{ employee.user.email }}</td>
+                        <td>
+                            <a href="{% url 'delete_employee' employee.id %}" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this employee?');">Delete</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h3 class="mt-4">Create HR</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ hr_form.as_p }}
+            <button type="submit" name="create_hr" class="btn btn-primary mt-2">Create HR</button>
+        </form>
+
+        <h3 class="mt-4">Create Staff</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ staff_form.as_p }}
+            <button type="submit" name="create_staff" class="btn btn-primary mt-2">Create Staff</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

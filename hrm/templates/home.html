@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="card">
+    <div class="container">
+        <h2 class="mt-3">Home Page | Click on any Company to Login</h2>
+        <ul class="list-group mt-3 mb-3">
+            {% for company in companies %}
+                <li class="list-group-item">
+                    <a href="{% url 'login' company.slug %}">{{ company.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

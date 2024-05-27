@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Staff Dashboard{% endblock %}
+{% block content %}
+<div class="card">
+    <div class="container">
+        <h2 class="mt-3">Staff Dashboard</h2>
+        <p class="mt-3">Welcome, {{ user.username }}!</p>
+        <a href="{% url 'leave_request' %}" class="btn btn-primary mt-3 mb-3">Request Leave</a>
+        <table class="table table-striped mt-3 mb-3">
+            <thead>
+                <tr>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Reason</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for leave in leave_requests %}
+                <tr>
+                    <td>{{ leave.start_date }}</td>
+                    <td>{{ leave.end_date }}</td>
+                    <td>{{ leave.reason }}</td>
+                    <td>
+                        {% if leave.approved %}
+                        <span class="badge badge-success">Approved</span>
+                        {% elif leave.rejected %}
+                        <span class="badge badge-danger">Rejected</span>
+                        {% else %}
+                        <span class="badge badge-warning">Pending</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
