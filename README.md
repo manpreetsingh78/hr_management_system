@@ -14,6 +14,10 @@ python manage.py createsuperuser
 
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/2acabac3-987c-4125-a7eb-beda25534465)
 
+![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/ff31dc1e-f97c-46e0-a431-54dcf5a15559)
+
+![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/741d0755-2f3e-4b40-89db-143711541bf1)
+
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/41799321-1912-4881-89b6-63b5c9fad6bc)
 
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/b7f2a788-b7fb-41fa-a418-80e95029ecea)
