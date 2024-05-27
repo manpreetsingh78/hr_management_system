@@ -15,12 +15,12 @@ def custom_logout_view(request):
         try:
             company_slug = request.user.employee.branch.company.slug
             logout(request)
-            return redirect(reverse('login/', kwargs={'company_slug': company_slug}))
+            return redirect(reverse('login', kwargs={'company_slug': company_slug}))
         except AttributeError:
             logout(request)
-            return redirect(reverse('home/'))
+            return redirect(reverse('home'))
     logout(request)
-    return redirect(reverse('home/'))
+    return redirect(reverse('home'))
 
 def home(request):
     companies = Company.objects.all()
