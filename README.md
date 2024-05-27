@@ -22,6 +22,8 @@ python manage.py runserver<br/>
 
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/ff31dc1e-f97c-46e0-a431-54dcf5a15559)
 
+![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/e522cc15-fb2d-4030-9c41-0d1926e12608)
+
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/741d0755-2f3e-4b40-89db-143711541bf1)
 
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/41799321-1912-4881-89b6-63b5c9fad6bc)
