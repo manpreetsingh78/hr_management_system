@@ -13,11 +13,9 @@ Follow these steps:-<br/>
 ##python manage.py createsuperuser<br/>
 ##python manage.py runserver<br/>
 <br/>
-##
-<br/>
 ##Default Password for all Users is password<br/>
-##<br/>
-##<br/>
+##
+##
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/1965b0bc-6c90-42e9-b10f-b4ce263a8433)
 
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/2acabac3-987c-4125-a7eb-beda25534465)
