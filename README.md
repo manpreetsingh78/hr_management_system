@@ -1,7 +1,7 @@
 # hr_management_system
 Follow these steps:-<br/>
 
-##git clone https://github.com/manpreetsingh78/hr_management_system.git<br/>
+## git clone https://github.com/manpreetsingh78/hr_management_system.git<br/>
 ##cd hr_management_system<br/>
 ##virtualenv venv<br/>
 ##venv/scripts/activate<br/>
