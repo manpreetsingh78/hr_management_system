@@ -1,19 +1,19 @@
 # hr_management_system
-Follow these steps:-<br/>
+## Follow these steps:-<br/>
 
-## git clone https://github.com/manpreetsingh78/hr_management_system.git<br/>
-## cd hr_management_system<br/>
-## virtualenv venv<br/>
-## venv/scripts/activate<br/>
-## pip install -r requirements.txt<br/>
+git clone https://github.com/manpreetsingh78/hr_management_system.git<br/>
+cd hr_management_system<br/>
+virtualenv venv<br/>
+venv/scripts/activate<br/>
+pip install -r requirements.txt<br/>
 
-## python manage.py makemigrations<br/>
-## python manage.py migrate<br/>
-## python manage.py populate_data<br/>
-## python manage.py createsuperuser<br/>
-## python manage.py runserver<br/>
+python manage.py makemigrations<br/>
+python manage.py migrate<br/>
+python manage.py populate_data<br/>
+python manage.py createsuperuser<br/>
+python manage.py runserver<br/>
 <br/>
-##Default Password for all Users is password<br/>
+## Default Password for all Users is password<br/>
 ##
 ##
 ![image](https://github.com/manpreetsingh78/hr_management_system/assets/73060253/1965b0bc-6c90-42e9-b10f-b4ce263a8433)
