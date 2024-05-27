@@ -1,9 +1,9 @@
 # hr_management_system
 Follow these steps:-
 
-__git clone https://github.com/manpreetsingh78/hr_management_system.git
-__cd hr_management_system
-__virtualenv venv
+__git clone https://github.com/manpreetsingh78/hr_management_system.git\
+__cd hr_management_system\
+__virtualenv venv\
 __venv/scripts/activate
 __pip install -r requirements.txt
 
